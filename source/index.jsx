@@ -1,5 +1,6 @@
-import React    from 'react';
-import ReactDOM from 'react-dom';
+import React       from 'react';
+import ReactDOM    from 'react-dom';
+import GetArticles from 'hacker-news-top-list';
 
 import NewsFeed from './Views/NewsFeed';
 
@@ -31,9 +32,9 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    setTimeout(() => {
-      this.setState({ articles: ARTICLES })
-    }, 3000);
+    GetArticles().them((articles) => {
+      this.setState({ articles })
+    });
   }
 
   render() {

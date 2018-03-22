@@ -1,13 +1,8 @@
+import React    from 'react';
+import ReactDOM from 'react-dom';
 
-
-function Main() {
-  document.body.innerHTML = `
-    <div>
-      <span>
-        Hello Hacker News
-      </span>
-    </div>
-  `
-}
-
-Main()
+ReactDOM.render(React.createElement(
+  'div',
+  {},
+  'Hello Hacker News'
+), document.getElementById('App'));

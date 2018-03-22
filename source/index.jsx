@@ -1,15 +1,7 @@
 import React    from 'react';
 import ReactDOM from 'react-dom';
 
-export default function Article(props) {
-  return (
-    <div>
-      <h3>{props.title}</h3>
-      <p>by {props.by}</p>
-      <a href={props.url}>{props.url}</a>
-    </div>
-  )
-}
+import Article from './Components/Article';
 
 
 ReactDOM.render((

@@ -24,8 +24,25 @@ const ARTICLES = [
   },
 ];
 
-ReactDOM.render((
-  <NewsFeed
-    articles={ARTICLES}
-  />
-), document.getElementById('App'));
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { articles: [] };
+  }
+
+  componentWillMount() {
+    setTimeout(() => {
+      this.setState({ articles: ARTICLES })
+    }, 3000);
+  }
+
+  render() {
+    return (
+      <NewsFeed
+        articles={this.state.articles}
+      />
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('App'));

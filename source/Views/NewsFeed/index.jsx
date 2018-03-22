@@ -1,19 +1,19 @@
-import React   from 'react';
+import React       from 'react';
 
-import Article from '../../Components/Article';
+import ArticleList from '../ArticleList';
+import Empty       from '../../Components/Empty';
+import Loading     from '../../Components/Loading';
+import Failure     from '../../Components/Failure';
 
 
-export default function NewsFeed({ articles }) {
-  return (
-    <div>
-      {articles.map(article =>
-        <Article
-          by={article.by}
-          key={article.id}
-          title={article.title}
-          url={article.url}
-        />
-      )}
-    </div>
-  );
+export default function NewsFeed({ articles, request }) {
+  switch(request) {
+    case 'SUCCESS':
+      return <ArticleList articles={articles} />
+    case 'LOADING':
+      return <Loading />;
+    case 'FAILURE':
+    default:
+      return <Failure />;
+  }
 }

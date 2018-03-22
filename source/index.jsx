@@ -2,9 +2,11 @@ import React       from 'react';
 import ReactDOM    from 'react-dom';
 import GetArticles from 'hacker-news-top-list';
 
-import Loading     from './Components/Loading';
-import Failure     from './Components/Failure';
+import Filter      from './Views/Filter';
 import NewsFeed    from './Views/NewsFeed';
+
+import styles from './styles.css';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -12,6 +14,7 @@ class App extends React.Component {
     this.state = {
       articles: [],
       request: 'LOADING',
+      filter: '',
     };
   }
 
@@ -23,21 +26,25 @@ class App extends React.Component {
     });
   }
 
+  handleFilterChange(event) {
+    this.setState({ filter: event.target.value })
+  }
+
   render() {
-    switch(this.state.request) {
-      case 'SUCCESS':
-        return (
-          <NewsFeed
-            articles={this.state.articles}
-          />
-        );
-      case 'LOADING':
-        return <Loading />;
-      case 'FAILURE':
-      default:
-        return <Failure />;
-    }
+    return (
+      <div className={styles.app}>
+        <Filter
+          onChange={this.handleFilterChange}
+          value={this.state.filter}
+        />
+        <NewsFeed
+          articles={this.state.articles}
+          request={this.state.request}
+        />
+      </div>
+    );
   }
 }
+
 
 ReactDOM.render(<App />, document.getElementById('App'));

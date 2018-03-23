@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
+
+import qr from './qr.png'
 import styles from './styles.css'
+
+
 
 export default (props) => {
   const chapters = props.data.allMarkdownRemark.edges.map(e => e.node.frontmatter)
@@ -23,6 +27,14 @@ export default (props) => {
           </Link>
         ))}
       </div>
+      <h1 /> {/* spaces the content :| */}
+      <h2>
+        Wanna play around with the Hackernews app now?
+      </h2>
+      <p>
+        Download the <a href="https://expo.io/">expo</a> app on your phone and scan this QR code.
+      </p>
+      <img src={qr}/>
     </div>
   );
 }

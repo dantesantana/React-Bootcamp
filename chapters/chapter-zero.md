@@ -2,6 +2,7 @@
 path: "/chapters/my-first-element"
 date: "2018-03-22"
 title: "My First Element"
+index: 0
 ---
 
 # My First Element

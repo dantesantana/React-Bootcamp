@@ -2,6 +2,7 @@
 path: "/chapters/native-primitives"
 date: "2018-03-22"
 title: "Native Primitives"
+index: 10
 ---
 
 # Native Primitives

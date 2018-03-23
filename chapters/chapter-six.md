@@ -2,6 +2,7 @@
 path: "/chapters/api-integrations"
 date: "2018-03-22"
 title: "API Integrations"
+index: 6
 ---
 
 # API Integrations

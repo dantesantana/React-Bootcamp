@@ -2,6 +2,7 @@
 path: "/chapters/component-architecture"
 date: "2018-03-22"
 title: "Component Architecture"
+index: 2
 ---
 
 # Component Architecture

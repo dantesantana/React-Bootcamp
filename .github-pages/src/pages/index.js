@@ -3,7 +3,8 @@ import Link from 'gatsby-link'
 import styles from './styles.css'
 
 export default (props) => {
-  console.log(props);
+  const chapters = props.data.allMarkdownRemark.edges.map(e => e.node.frontmatter)
+
   return (
     <div>
       <h1>Welcome to Tanda's React Bootcamp 👋</h1>
@@ -12,11 +13,9 @@ export default (props) => {
       </p>
       <h2>Chapters</h2>
       <div className="chapter-links">
-        {props.data.allMarkdownRemark.edges.map(edge => (
-          <Link
-            to={edge.node.frontmatter.path}
-          >
-            {edge.node.frontmatter.title}
+        {chapters.map(chapter => (
+          <Link to={chapter.path}>
+            {chapter.index} - {chapter.title}
           </Link>
         ))}
       </div>
@@ -27,12 +26,19 @@ export default (props) => {
 
 export const pageQuery = graphql`
   query AllChapters {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: {
+        order: ASC,
+        fields: [frontmatter___index]
+      }
+      limit: 1000
+    ) {
     edges {
       node {
         frontmatter {
-          title
+          index
           path
+          title
         }
       }
     }

@@ -2,6 +2,7 @@
 path: "/chapters/modules-and-styles"
 date: "2018-03-22"
 title: "Modules & Styles"
+index: 3
 ---
 
 # Modules & Styles

@@ -2,6 +2,7 @@
 path: "/chapters/controlled-inputs"
 date: "2018-03-22"
 title: "Controlled Inputs"
+index: 7
 ---
 
 # Controlled Inputs

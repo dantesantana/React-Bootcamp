@@ -2,6 +2,7 @@
 path: "/chapters/what-is-jsx"
 date: "2018-03-22"
 title: "What is JSX"
+index: 1
 ---
 
 # What is JSX

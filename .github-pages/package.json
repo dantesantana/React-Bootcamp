@@ -7,6 +7,9 @@
     "gatsby": "^1.9.238",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-sharp": "^1.6.41",
+    "gatsby-remark-copy-linked-files": "^1.5.30",
+    "gatsby-remark-images": "^1.5.56",
     "gatsby-remark-prismjs": "^1.2.20",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.37",
@@ -17,13 +20,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "yarn gatsby build && mv public ../docs",
+    "build": "rm -rf ../docs && yarn gatsby build && mv public ../docs",
     "develop": "gatsby develop -H 0.0.0.0",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write 'src/**/*.js'"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0",
     "prettier": "^1.11.1"
   }
 }

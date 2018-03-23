@@ -13,8 +13,8 @@
       "path---chapters-my-first-element-7799a8a2df4667c4549e.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-f41626f1497f1a8b6b24.js",
-      "component---src-pages-index-js-f41626f1497f1a8b6b24.js.map"
+      "component---src-pages-index-js-d7cc6a3aca0730016ba8.js",
+      "component---src-pages-index-js-d7cc6a3aca0730016ba8.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -29,24 +29,24 @@
       "path---chapters-native-styles-a388ac39e47a13c199a7.js.map"
     ],
     "path---chapters-modules-and-styles": [
-      "path---chapters-modules-and-styles-0cfb8f88d3ae40b82640.js",
-      "path---chapters-modules-and-styles-0cfb8f88d3ae40b82640.js.map"
+      "path---chapters-modules-and-styles-e3247dcec49718ca48a7.js",
+      "path---chapters-modules-and-styles-e3247dcec49718ca48a7.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-2a447c24de56dc196958.js",
-      "component---src-layouts-index-js-2a447c24de56dc196958.js.map"
+      "component---src-layouts-index-js-f45f79831c7bb2a0bf34.js",
+      "component---src-layouts-index-js-f45f79831c7bb2a0bf34.js.map"
     ],
     "path---chapters-component-architecture": [
       "path---chapters-component-architecture-9bb90ca0506f203665e3.js",
       "path---chapters-component-architecture-9bb90ca0506f203665e3.js.map"
     ],
     "path---chapters-controlled-inputs": [
-      "path---chapters-controlled-inputs-698b964d1d8961e4facb.js",
-      "path---chapters-controlled-inputs-698b964d1d8961e4facb.js.map"
+      "path---chapters-controlled-inputs-c1eee19905e465535d05.js",
+      "path---chapters-controlled-inputs-c1eee19905e465535d05.js.map"
     ],
     "path---index": [
-      "path---index-2c442a9b68de8fcc2472.js",
-      "path---index-2c442a9b68de8fcc2472.js.map"
+      "path---index-016eaf5b140f9f09d331.js",
+      "path---index-016eaf5b140f9f09d331.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -71,14 +71,14 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-3e7e0e53bee2503cc532.js",
+      "app-5833de23f9d3ca095bd3.js",
       "build-js-styles.css",
-      "app-3e7e0e53bee2503cc532.js.map",
+      "app-5833de23f9d3ca095bd3.js.map",
       "build-js-styles.css.map"
     ],
     "path---chapters-port-the-rest": [
-      "path---chapters-port-the-rest-ced1e1a713b4c65de631.js",
-      "path---chapters-port-the-rest-ced1e1a713b4c65de631.js.map"
+      "path---chapters-port-the-rest-1a11ffe463f80b607933.js",
+      "path---chapters-port-the-rest-1a11ffe463f80b607933.js.map"
     ],
     "path---chapters-native-primitives": [
       "path---chapters-native-primitives-a64746cb4120ee8845d5.js",

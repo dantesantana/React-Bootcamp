@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import logo from './logo.png'
+import logo from './logo.png';
 
 
 const Header = () => (
@@ -29,7 +29,7 @@ const Header = () => (
       >
         <img style={{ padding: '0 1rem 0.125rem 0', margin: '0' }} src={logo} />
         <h2 style={{ fontWeight: '300', margin: '0' }}>
-            React Bootcamp
+          React Bootcamp
         </h2>
       </Link>
     </div>

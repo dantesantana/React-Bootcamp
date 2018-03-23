@@ -9,7 +9,11 @@ export default (props) => {
     <div>
       <h1>Welcome to Tanda's React Bootcamp 👋</h1>
       <p>
-        If you dont like reading markdown, please use this site to read the content of the bootcamp.
+        Hope you are keen to jump into learning some react and react-native. During the Bootcamp we will work towards building a small Hackernews news feed in plain react, and then port it over to react-native!
+      </p>
+      <p>
+        Please clone the project from <a href="https://github.com/TandaHQ/react-hackernews-bootcamp-one-v2"> here</a>,
+        before jumping into the chapters below. Also make sure you go through the project readme and have everything all set up correctly.
       </p>
       <h2>Chapters</h2>
       <div className="chapter-links">

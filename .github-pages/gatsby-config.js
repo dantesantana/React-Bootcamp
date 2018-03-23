@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Tanda React Bootcamp',
   },
+  pathPrefix: 'react-hackernews-bootcamp-one-v2',
   plugins: [{
     resolve: 'gatsby-plugin-react-helmet',
   }, {

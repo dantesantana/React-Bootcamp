@@ -20,7 +20,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ../docs && yarn gatsby build && mv public ../docs",
+    "build": "rm -rf ../docs && yarn gatsby build --prefix-paths && mv public ../docs",
     "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write 'src/**/*.js'"
   },

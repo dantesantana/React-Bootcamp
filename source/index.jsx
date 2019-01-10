@@ -1,8 +1,16 @@
 import React    from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(React.createElement(
-  'div',
-  {},
-  'Hello Hacker News'
-), document.getElementById('App'));
+var count = 0;
+
+function clickHandler(){
+	count++;
+	alert('Thanks! ' + count);
+}
+
+ReactDOM.render(
+	(
+		<button onClick={clickHandler}>Click Me!</button>
+	), 
+	document.getElementById('app')
+);

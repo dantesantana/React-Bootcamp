@@ -8,6 +8,8 @@ import ReactDOM from 'react-dom';
 //curly brackets "{}" are placed around property names here 
 //to make sure they're used correctly, they are not mandatory
 //however there can be issues in areas such as hyperlinks
+
+
 function Article(props){
 	return(
 		<div>
@@ -38,5 +40,31 @@ const someArticles =
 
 ReactDOM.render(
 	someArticles, 
-	document.getElementById('Test')
+	document.getElementById('App')
+);
+
+
+
+
+
+//Classful example
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Clock />,
+  document.getElementById('Test')
 );

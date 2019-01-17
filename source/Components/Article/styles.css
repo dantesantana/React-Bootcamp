@@ -1,4 +1,4 @@
-.articleStyle {
-	margin: 20px;
-	border: 0.125rem dashed green;
+.article {	
+	border-bottom: solid 2px blue;
+	padding: 2rem;
 }

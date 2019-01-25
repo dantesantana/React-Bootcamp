@@ -2735,6 +2735,7 @@ grouped-queue@^0.3.3:
 hacker-news-top-list@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/hacker-news-top-list/-/hacker-news-top-list-1.0.3.tgz#f90558ea7dc6eb9e7b9b96132cdde00d66326850"
+  integrity sha512-CMwUmWb3Anwrho78egUdxdyIE+kT1bkobVUIWMYA7JVnh7NqvneV66zcagraNaMBKM8ZUlXDvLYpwyrMpU/i9Q==
 
 handle-thing@^1.2.5:
   version "1.2.5"
